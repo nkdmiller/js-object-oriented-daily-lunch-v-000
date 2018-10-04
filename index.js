@@ -65,7 +65,7 @@ class Customer {
       }.bind(this)
       );
       total = arr.forEach(function(a){
-        total = total + a.price;
+        total += a.price;
       });
       return total;
     }
