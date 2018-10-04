@@ -58,15 +58,7 @@ class Customer {
       }.bind(this)
       );
     }
-    
-    static byPrice() {
-      store.meals.sort(
-        function(a, b){
-          return a.price - b.price;
-          
-        }
-        );
-    }
+
 }
 
 class Meal {
@@ -87,6 +79,15 @@ class Meal {
         return delivery.mealId === this.id;
       }.bind(this)
       );
+    }
+    
+    static byPrice() {
+      store.meals.sort(
+        function(a, b){
+          return a.price - b.price;
+          
+        }
+        );
     }
 }
 
