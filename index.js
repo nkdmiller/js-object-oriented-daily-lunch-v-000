@@ -53,8 +53,9 @@ class Customer {
       );
     }
     meals() {
-      return this.deliveries().filter(function(delivery){
-        delivery.customerId === this.id;
+      let customerMeals = 0;
+      return this.deliveries().forEach(function(delivery){
+        delivery.mealId
       }.bind(this)
       );
     }
