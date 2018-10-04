@@ -115,6 +115,9 @@ class Delivery{
         store.deliveries.push(this);
     }
     customer(){
-      
+      return store.customers.find(function(customer){
+        customer.id === this.customerId;
+      }.bind(this)
+      );
     }
 }
