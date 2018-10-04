@@ -61,7 +61,7 @@ class Customer {
     totalSpent() {
       return this.meals().reduce(function(total, meal){
         total += meal.price;
-      } ,0);
+      }.bind(this) ,0);
     }
 
 }
