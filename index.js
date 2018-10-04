@@ -89,7 +89,7 @@ class Meal {
             uniqueCustomers.push(a.customer());
           }
         }
-      });
+      }.bind(this));
       return uniqueCustomers;
     }
     
