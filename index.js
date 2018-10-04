@@ -30,7 +30,15 @@ class Neighborhood {
             }.bind(this)
           );
     }
-    meals
+    meals(){
+      let mealsList = [];
+      this.deliveries().forEach(function(delivery){
+        if (!mealsList.includes(delivery.meal())){
+          mealsList.push(delivery.meal());
+        }
+      });
+      return mealsList;
+    }
     
 }
 
