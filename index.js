@@ -59,12 +59,12 @@ class Customer {
       );
     }
     totalSpent() {
-      let total = '0';
+      let total = 0;
       let arr = store.meals.filter(function(meal){
         return meal.customerId === this.id;
       }.bind(this)
       );
-      arr.forEach(function(a){
+      total = arr.forEach(function(a){
         total = total + a.price;
       });
       return total;
