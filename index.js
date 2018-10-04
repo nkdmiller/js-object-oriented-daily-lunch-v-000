@@ -56,9 +56,8 @@ class Customer {
       let customerMeals = [];
       this.deliveries().forEach(function(delivery){
         customerMeals.push(delivery.meal());
-      })
+      });
       return customerMeals;
-      );
     }
     totalSpent() {
       let total = 0;
