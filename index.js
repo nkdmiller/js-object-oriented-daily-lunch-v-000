@@ -53,11 +53,8 @@ class Customer {
       );
     }
     meals() {
-      return store.meals.filter(function(meal){
-        return meal.customers().find(function(customer){
-          return customer.id === this.id;
-        }.bind(this)
-        );
+      return this.deliveries().filter(function(meal){
+        
       }.bind(this)
       );
     }
