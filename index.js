@@ -82,6 +82,7 @@ class Meal {
     }
     
     customers(){
+      let 
       return store.customers.filter(function(customer){
         return {
         }
