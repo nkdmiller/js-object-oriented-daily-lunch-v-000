@@ -126,4 +126,10 @@ class Delivery{
       }.bind(this)
       );
     }
+    meal(){
+      return store.meals.find(function(neighborhood){
+        return meal.id === this.mealId;
+      }.bind(this)
+      );
+    }
 }
