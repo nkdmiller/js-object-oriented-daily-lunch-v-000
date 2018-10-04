@@ -63,6 +63,7 @@ class Customer {
       this.meals().forEach(function(meal){
         total = total + meal.price;
       }.bind(this));
+      return total;
     }
 
 }
