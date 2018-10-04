@@ -60,7 +60,12 @@ class Customer {
     }
     
     static byPrice() {
-      store.meals.sort 
+      store.meals.sort(
+        function(a, b){
+          return a.price - b.price;
+          
+        }
+        );
     }
 }
 
