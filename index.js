@@ -72,6 +72,8 @@ class Meal {
         // insert in the item to the store
         store.meals.push(this);
     }
+    
+    
 }
 
 class Delivery{
