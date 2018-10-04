@@ -114,4 +114,7 @@ class Delivery{
         // insert in the item to the store
         store.deliveries.push(this);
     }
+    customer(){
+      
+    }
 }
