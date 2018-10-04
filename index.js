@@ -30,6 +30,7 @@ class Neighborhood {
             }.bind(this)
           );
     }
+    meals
     
 }
 
