@@ -83,10 +83,8 @@ class Meal {
     
     static byPrice() {
       store.meals.sort(
-        function(a, b){
+        (a, b) =>
           return a.price < b.price;
-          
-        }
         );
     }
 }
