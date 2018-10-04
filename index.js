@@ -53,7 +53,7 @@ class Customer {
       );
     }
     meals() {
-      return store.meals.filter(function(meal){
+      return store.meals.forEach(function(meal){
         return meal.customers().filter(function(customer){
           return customer.id === this.id;
         }.bind(this)
