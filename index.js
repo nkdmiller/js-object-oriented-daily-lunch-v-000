@@ -85,7 +85,9 @@ class Meal {
       let uniqueCustomers = [];
       store.deliveries.forEach(function(a){
         if (a.mealId === this.id){
-          a.customer()
+          if uniqueCustomers.includes(a.customer()){
+            
+          }
       }
     }
     
