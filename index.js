@@ -22,16 +22,13 @@ class Neighborhood {
             }.bind(this)
         );
     }
-     passengers() {
-      return store.passengers.filter(
-        function(passenger) {
-          return passenger.trips().filter(
-            function(trip) {
-              trip.driverId === this.id;
+     customers() {
+      return store.customers.filter(
+        function(customer) {
+    
+              customer.neighborhoodId === this.id;
             }.bind(this)
           );
-        }.bind(this)
-      );
     }
 }
 
