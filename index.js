@@ -63,7 +63,9 @@ class Customer {
       return store.meals.filter(function(meal){
         return meal.customerId === this.id;
       }.bind(this)
-)
+      ).forEach(function(a){
+        total = total + a.price;
+      });
     }
 
 }
