@@ -53,10 +53,11 @@ class Customer {
       );
     }
     meals() {
-      let customerMeals = 0;
-      return this.deliveries().forEach(function(delivery){
-        delivery.mealId
-      }.bind(this)
+      let customerMeals = [];
+      this.deliveries().forEach(function(delivery){
+        customerMeals.push(delivery.meal());
+      })
+      return customerMeals;
       );
     }
     totalSpent() {
