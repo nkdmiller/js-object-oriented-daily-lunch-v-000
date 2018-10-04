@@ -60,7 +60,10 @@ class Customer {
     }
     totalSpent() {
       let total = 0;
-      this.meals().forEach(function(a){
+      store.meals.filter(function(meal){
+        return meal.customerId === this.id;
+      }.bind(this)
+      ).forEach(function(a){
         total = total + a.price;
       }.bind(this));
       return this.meals();
