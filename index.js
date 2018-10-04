@@ -82,7 +82,9 @@ class Meal {
     }
     
     customers(){
-      
+      return store.customers.filter(function(customer){
+        
+      }
     }
     
     static byPrice() {
