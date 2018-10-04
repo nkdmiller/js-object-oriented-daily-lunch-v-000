@@ -60,7 +60,7 @@ class Customer {
     }
     
     static byPrice() {
-      store.meals.sort
+      store.meals.sort 
     }
 }
 
