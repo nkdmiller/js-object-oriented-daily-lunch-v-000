@@ -30,6 +30,7 @@ class Neighborhood {
             }.bind(this)
           );
     }
+    
 }
 
 class Customer {
@@ -43,6 +44,10 @@ class Customer {
  
         // insert in the item to the store
         store.customers.push(this);
+    }
+    
+    deliveries() {
+      
     }
 }
 
