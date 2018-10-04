@@ -59,7 +59,11 @@ class Customer {
       );
     }
     totalSpent() {
-      return this.meals().reduce((total, meal) => (total += meal.price),0);
+      let total = 0;
+      this.meals().filter(function(meal){
+        total += meal.price;
+      });
+      return total;
     }
 
 }
