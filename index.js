@@ -81,6 +81,10 @@ class Meal {
       );
     }
     
+    customers(){
+      
+    }
+    
     static byPrice() {
       return store.meals.sort(
         (a, b) =>
