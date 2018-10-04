@@ -82,10 +82,10 @@ class Meal {
     }
     
     customers(){
-      let 
-      return store.customers.filter(function(customer){
-        return {
-        }
+      let uniqueCustomers = [];
+      store.deliveries.forEach(function(a){
+        if (a.mealId === this.id){
+          a.customer()
       }
     }
     
