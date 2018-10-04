@@ -60,8 +60,8 @@ class Customer {
     }
     totalSpent() {
       return this.meals().reduce(function(total, meal){
-        
-      } (total += meal.price),0);
+        total += meal.price;
+      } ,0);
     }
 
 }
