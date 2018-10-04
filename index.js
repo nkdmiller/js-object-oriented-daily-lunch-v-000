@@ -58,6 +58,10 @@ class Customer {
       }.bind(this)
       );
     }
+    
+    static byPrice() {
+      store.meals.sort
+    }
 }
 
 class Meal {
