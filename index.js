@@ -63,7 +63,7 @@ class Customer {
       return store.meals.filter(function(meal){
         return meal.customerId === this.id;
       }.bind(this)
-
+)
     }
 
 }
