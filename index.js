@@ -53,8 +53,8 @@ class Customer {
       );
     }
     meals() {
-      return this.deliveries().filter(function(meal){
-        
+      return this.deliveries().filter(function(delivery){
+        delivery.customerId === this.id;
       }.bind(this)
       );
     }
